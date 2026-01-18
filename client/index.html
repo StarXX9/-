@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Private Chat</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header>
+        <h1>Private Chat</h1>
+        <p>Two-person desktop chat (shared secret required).</p>
+      </header>
+
+      <section class="panel">
+        <div class="field">
+          <label for="serverUrl">Server URL</label>
+          <input id="serverUrl" type="text" placeholder="ws://your-server:8080" />
+        </div>
+        <div class="field">
+          <label for="token">Shared secret</label>
+          <input id="token" type="password" placeholder="Shared secret" />
+        </div>
+        <div class="field">
+          <label for="name">Your name</label>
+          <input id="name" type="text" placeholder="Your name" />
+        </div>
+        <button id="connectBtn">Connect</button>
+        <p id="status" class="status">Not connected.</p>
+      </section>
+
+      <section class="chat">
+        <div id="log" class="log"></div>
+        <form id="chatForm" class="composer">
+          <input id="messageInput" type="text" placeholder="Type a message" />
+          <button type="submit">Send</button>
+        </form>
+      </section>
+    </div>
+
+    <script src="renderer.js"></script>
+  </body>
+</html>
