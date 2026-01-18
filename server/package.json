@@ -1,0 +1,14 @@
+{
+  "name": "private-chat-server",
+  "version": "1.0.0",
+  "description": "Minimal WebSocket server for two-person private chat",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "ws": "^8.18.0"
+  }
+}
